@@ -74,7 +74,8 @@ jobs:
           - windows-latest
         rust:
           - stable
-          - nightly
+          # TODO: Switch back to `nightly` https://github.com/rust-lang/rust/issues/120949
+          - nightly-2024-02-10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/cache@v3.3.2
